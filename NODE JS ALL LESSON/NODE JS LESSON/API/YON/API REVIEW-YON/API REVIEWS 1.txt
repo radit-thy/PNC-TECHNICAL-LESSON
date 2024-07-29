@@ -1,0 +1,11 @@
+1.crud = create,read,update,delete
+2.json file
+3.read file:JSON.parse(fs.readFileSync("tasks.json"));
+4.write or update file:fs.writeFileSync("tasks.json", JSON.stringify(data));
+
+API:
+1.enpoint
+2.mothod
+3.request
+4.respond
+5.

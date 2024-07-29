@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 3</title>
+  </head>
+  <body></body>
+  <script>
+    let first = () => console.log(" 1 ");
+
+    let second = () => {
+      setTimeout(() => {
+        console.log(5); // Asynchronous
+      }, 5000);
+    };
+    let third = (color) => console.log("3 " + color);
+
+    first();
+    second();
+    third("orange");
+  </script>
+</html>

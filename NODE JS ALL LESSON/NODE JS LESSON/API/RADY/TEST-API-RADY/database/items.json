@@ -1,0 +1,27 @@
+[
+    {
+        "id": "a3f88a42-ef69-4e49-b565-f4c5819e1b56",
+        "name": "item 50000",
+        "price": 200000
+    },
+    {
+        "id": "8a5b3f8e-e951-44b3-ad9f-eca1f078e816",
+        "name": "item 60000",
+        "price": 200000
+    },
+    {
+        "id": "e918a33b-de85-4669-9c23-d8a574c508c0",
+        "name": "item 60",
+        "price": 6000
+    },
+    {
+        "id": "9d8c8777-e4d0-46d7-a92a-bb95b2788e6c",
+        "name": "item 60",
+        "price": 1000
+    },
+    {
+        "id": "6fa91020-47ec-4eb6-a3a1-ca91cea152e0",
+        "name": "item 60",
+        "price": 1000
+    }
+]

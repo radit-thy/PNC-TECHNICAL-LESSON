@@ -1,0 +1,111 @@
+[
+    {
+        "id": 1,
+        "name": "Molina",
+        "email": "molina@gmail.com",
+        "education": [
+            {
+                "university": "PNC Cambodia",
+                "degree": "Bachelor of Science",
+                "field": "Computer Science",
+                "startDate": "2017-09-01",
+                "endDate": "2021-06-01",
+                "location" : [
+                    {
+                        "city": "Phnom Penh",
+                        "country": "Cambodia"
+                    }
+                ],
+                "social": [
+                    {
+                        "name": "LinkedIn",
+                        "status": "Active",
+                        "follower": 2000
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Dynava",
+        "email": "dynava@gmail.com",
+        "education": [
+           {
+            "university": "UP Cambodia",
+            "degree": "Bachelor of Nurse",
+            "field": "Nursing",
+            "startDate": "2017-09-01",
+            "endDate": "2021-06-01",
+            "location" : [
+                {
+                   "city": "Phnom Penh", 
+                   "country": "Cambodia"
+                }
+            ],
+            "social": [
+                {
+                    "name": "Facebook",
+                    "status": "Active",
+                    "follower": 1000
+                }
+            ]
+           }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Kolita",
+        "email": "kolita@gmail.com",
+        "education": [
+            {
+                "university": "RUPP Cambodia",
+                "degree": "Bachelor of Math",
+                "field": "Math",
+                "startDate": "2017-09-01",
+                "endDate": "2021-06-01",
+                "location" : [
+                    {
+                        "city": "Siem Riep",
+                        "country": "Cambodia"
+                    }
+                ],
+                "social": [
+                    {
+                        "name": "Twitter",
+                        "status": "Active",
+                        "follower": 500
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Maiya",
+        "email": "maiya@gmail.com",
+        "education": [
+            {
+                "university": "UC Cambodia",
+                "degree": "Bachelor of Science",
+                "field": "Computer Science",
+                "startDate": "2017-09-01",
+                "endDate": "2021-06-01",
+                "location" : [
+                    {
+                        "city": "Battambang",
+                        "country": "Cambodia"
+                    }
+                ],
+                "social": [
+                    {
+                        "name": "Tiktok",
+                        "status": "Active",
+                        "follower": 3000
+                    }
+                ]
+            }
+        ]
+
+    }
+]
