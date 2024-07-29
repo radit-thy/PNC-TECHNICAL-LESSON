@@ -1,0 +1,4 @@
+var booleanVariable;
+booleanVariable = "".isNumeric();
+
+

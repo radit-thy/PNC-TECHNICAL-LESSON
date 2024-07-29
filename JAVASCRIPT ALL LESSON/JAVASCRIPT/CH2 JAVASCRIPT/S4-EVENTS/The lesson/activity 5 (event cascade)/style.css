@@ -1,0 +1,29 @@
+body,
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grandParent {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}
+
+.parent {
+  background-color: orange;
+  width: 130px;
+  height: 130px;
+}
+
+.child {
+  background-color: green;
+  width: 60px;
+  height: 60px;
+}
+
+.brother {
+  background-color: rgb(255, 2, 141);
+  width: 60px;
+  height: 60px;
+}

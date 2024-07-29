@@ -1,0 +1,81 @@
+//CREATE DATA BY ARRAY
+let data = [
+    {img: 'img/T_2_front-600x600.jpg',name: 'HTML', nb_stock: 1, price:'20$'},
+    {name: 'CSS', nb_stock: 2, price:'200$'},
+    {name: 'JAVASCRIPT', nb_stock: 3, price:'2000$'},
+    {name: 'DATABASE', nb_stock: 4, price:'20000$'},
+]
+
+//FUNCTION SAVE
+function save(){
+    localStorage.setItem("data", JSON.stringify(data));
+}
+// save()
+function load(){
+    data = JSON.parse(localStorage.getItem("data"));
+}
+
+//FUNCTION DISPLAY CARD
+let container = document.querySelector('.container');
+let main_card = document.querySelector('.main_card')
+function display_card() {
+    for (display of  data){
+        let card = document.createElement('div');
+        card.className = 'card card-1';
+
+        let h1 = document.createElement('h2');
+        h1.textContent = display.name;
+        
+        let p1 = document.createElement('p');
+        p1.textContent = 'name in stock: ' + display.nb_stock;
+        
+        let p2 = document.createElement('p');
+        p2.textContent = 'price: ' + display.price;
+        
+        let btn = document.createElement('button');
+        btn.textContent = 'Add to card'
+        btn.addEventListener('click', addTocard)
+
+
+        let img1 = document.createElement('img');
+        img1.src = 'img/T_2_front-600x600.jpg'
+        card.appendChild(img1);
+        card.appendChild(h1);
+        card.appendChild(p1);
+        card.appendChild(p2);
+        card.appendChild(btn)
+        container.appendChild(card);
+    }
+}
+
+//ADD ORDER PROUCT
+let add_product = document.querySelector('.add_info_product');
+let x = 0
+function addTocard(event){
+    let item =document.querySelector(".add_card")
+    let box_product = document.createElement('div');
+    box_product.className = 'add_card';
+
+    let span = document.createElement('span');
+    span.textContent = event.target.parentElement.children[1].textContent;
+
+    let p = document.createElement('p');
+    p.textContent = event.target.parentElement.children[3].textContent;
+    let q = document.createElement("span")
+    if (add_product.contains(item)){
+        x+=1
+        q.textContent=x
+    }
+    add_product.appendChild(box_product);
+    box_product.appendChild(span);
+    box_product.appendChild(q)
+    box_product.appendChild(p);
+
+    console.log(add_product)
+    console.log(event.target.parentElement)
+}
+
+
+load();
+
+display_card();

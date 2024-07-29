@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+
+</head>
+<body>
+    <div class="form-container">
+       
+        <div class="form-body">
+           
+            <div class="form-group">
+                <h1>Fun's Place Food Survey</h1>
+                <p>Please let us know how was the food and service.</p>
+            </div>
+            <div class="form-group">
+                <h3>Food quality</h3>
+                <div class="group">
+                    <input type="radio" name="q_1" id="exc_q1" value="Excellent">
+                    <label for="exc_q1">Excellent</label>
+                </div>
+                <div class="group">
+                    <input type="radio" name="q_1" id="good_q1" value="Good">
+                    <label for="good_q1">Good</label>
+                </div>
+                <div class="group">
+                    <input type="radio" name="q_1" id="avg_q1" value="Average">
+                    <label for="avg_q1">Average</label>
+                </div>
+                <div class="group">
+                    <input type="radio" name="q_1" id="dis_q1" value="Dissatisfied">
+                    <label for="dis_q1">Dissatisfied</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <h3>Food Taste</h3>
+                <div class="group">
+                    <input type="radio" name="q_2" id="exc_q2" value="Excellent">
+                    <label for="exc_q2">Excellent</label>
+                </div>
+                <div class="group">
+                    <input type="radio" name="q_2" id="good_q2" value="Good">
+                    <label for="good_q2">Good</label>
+                </div>
+                <div class="group">
+                    <input type="radio" name="q_2" id="avg_q2" value="Average">
+                    <label for="avg_q2">Average</label>
+                </div>
+                <div class="group">
+                    <input type="radio" name="q_2" id="dis_q2" value="Dissatisfied">
+                    <label for="dis_q2">Dissatisfied</label>
+                </div>
+            </div>
+           
+            <div class="form-group">
+                <h3>Chef </h3>
+                <div class="group">
+                    <input type="checkbox" class="chef" id="good_q3" value="Good Food">
+                    <label for="good_q3">Good Food</label>
+                </div>
+                <div class="group">
+                    <input type="checkbox" class="chef" id="fri_q3" value="Friendly">
+                    <label for="fri_q3">Friendly</label>
+                </div>
+                <div class="group">
+                    <input type="checkbox" class="chef" id="kind_q3" value="Kindness">
+                    <label for="kind_q3">Kindness</label>
+                </div>
+                <div class="group">
+                    <input type="checkbox" class="chef" id="calm_q3" value="Calm">
+                    <label for="calm_q3">Calm</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <h3>Canteen </h3>
+                <div class="group">
+                    <input type="checkbox" class="canteen" id="small_q4" value="Canteen">
+                    <label for="small_q4">Small Space</label>
+                </div>
+                <div class="group">
+                    <input type="checkbox" class="canteen" id="hot_q4" value="Hot">
+                    <label for="hot_q4">Hot</label>
+                </div>
+                <div class="group">
+                    <input type="checkbox" class="canteen" id="messy_q4" value="Messy">
+                    <label for="messy_q4">Messy</label>
+                </div>
+                <div class="group">
+                    <input type="checkbox" class="canteen" id="ok_q4" value="Look Okay">
+                    <label for="ok_q4">Look Okay</label>
+                </div>
+            </div>
+            <div class="btn-submit">
+                <button type="button" id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="result-container hide">
+        <div class="thank">
+            <h1>Thank You !</h1>    
+        </div>
+        <div class="result">
+            <ul>
+                <li><span>Food Quality:</span><span id="quality"> </span></li>
+                <li><span>Food Taste:</span><span id="taste"> </span></li>
+                <li><span>Chef:</span><span id="chef"> </span></li>
+                <li><span>Canteen:</span><span id="canteen"> </span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

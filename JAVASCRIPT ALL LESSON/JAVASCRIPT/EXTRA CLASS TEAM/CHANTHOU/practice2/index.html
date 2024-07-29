@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <style>
+        span{
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+            width: 300px;
+            height: 30px;
+            color: white;
+
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <div class="container">
+
+    </div>
+    <script>
+        let container = document.querySelector('.container');
+        function createSpan(description,priority){
+            let span = document.createElement('span');
+            span.textContent = description;
+            if (priority === 1){
+                span.style.backgroundColor = 'red'
+            }else{
+                span.style.backgroundColor = 'teal'
+            }
+            if (priority === 0) {
+                span.style.backgroundColor = 'blue'
+
+            }
+        container.appendChild(span)
+        console.log(container)
+        
+        }
+        const tasks = [
+            { description: "Tasks 1", priority: 1 },
+            { description: "Tasks 2", priority: 2 },
+            { description: "Tasks 3", priority: 1 },
+            { description: "Tasks 4", priority: 4 },
+            { description: "Tasks 5", priority: 0 },
+            { description: "Tasks 5", priority: 0 },
+            { description: "Tasks 5", priority: 0 }
+        ]
+        for (let i = 0 ; i < tasks.length; i++){
+            createSpan(tasks[i]['description'],tasks[i]['priority']);
+        }
+
+    </script>
+
+</body>
+
+</html>

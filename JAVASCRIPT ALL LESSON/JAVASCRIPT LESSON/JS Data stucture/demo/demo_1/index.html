@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .result{
+            width: 500px;
+            margin: auto;
+            margin-top: 10px;
+        }
+        .list{
+            padding: 10px;
+            background: red;
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <form name="addTask">
+        <input type="text" name="task" id="task" placeholder="Task">
+        <select name="priority" id="priority">
+            <option value="0">Normal</option>
+            <option value="1">Important</option>
+        </select>
+        <button>Add Task</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <button id="writeMessage">Write message</button>
+    <button id="clearMessage">Clear message</button>
+    <p id="text"></p>
+
+    <script>
+	
+      function writeMessage() {
+        let text = document.getElementById("text");
+        text.textContent = "Here is a message";
+      }
+      
+      function clearMessage() {
+        let text = document.getElementById("text");
+        text.textContent = "";
+      }
+
+      // writemessageButton
+      let writeMessageButton = document.getElementById("writeMessage");
+      writeMessageButton.addEventListener("click", writeMessage);
+      // remove
+      // writeMessageButton.removeEventListener('click', writeMessage)
+
+      // clearMessagebutton
+      let clearMessageButton = document.getElementById("clearMessage");
+      clearMessageButton.addEventListener("click", clearMessage);
+	 
+    </script>
+  </body>
+</html>

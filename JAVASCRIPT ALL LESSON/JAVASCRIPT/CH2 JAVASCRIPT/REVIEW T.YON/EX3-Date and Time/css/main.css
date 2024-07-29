@@ -1,0 +1,55 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+.time-container {
+    width: 50%;
+}
+h1 {
+    font-size: 100px;
+}
+p {
+    font-size: 20px;
+}
+.timer {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#hour, #hour + p {
+    background: -webkit-linear-gradient(#090909, #f80657);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#minute, #minute + p {
+    background: -webkit-linear-gradient(#090909, #06f82a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#second, #second + p {
+    background: -webkit-linear-gradient(#090909, #0a06f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#date {
+    background: -webkit-linear-gradient(#090909, #f80612);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}

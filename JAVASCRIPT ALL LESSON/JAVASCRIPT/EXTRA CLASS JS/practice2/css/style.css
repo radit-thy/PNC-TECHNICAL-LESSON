@@ -1,0 +1,32 @@
+
+/* =======================Use colors gradient====================== */
+/* body{
+    background: linear-gradient(45deg,rgb(14, 165, 27),rgb(74, 207, 12));
+
+    background: linear-gradient(to right,rgb(21, 66, 25),50%,rgb(80, 245, 4));
+
+    background: linear-gradient(to bottom,rgb(37, 114, 43),50%,rgb(80, 245, 4));
+} */
+
+
+body{
+    background: linear-gradient(to right,rgb(21, 66, 25),50%,rgb(80, 245, 4));
+    display: flex;
+    justify-content: center;
+}
+/* ===============change postion=============== */
+.chang_direction{
+    transform:scaleX(-1);
+}
+
+.hide{
+    display: none;
+}
+
+
+h1{
+    font-size: 70px;
+}
+.text-color{
+    color: orange;
+}

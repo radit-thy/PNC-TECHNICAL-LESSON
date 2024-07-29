@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex3</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-box">
+        <form action="">
+          <div class="group">
+            <input type="text" placeholder="First Name" id="firstname">
+            <input type="text" placeholder="Last Name" id="lastname">
+          </div>
+          <div class="group">
+            <select id="province">
+              <option value="Banteam Mean Chey">Banteam Mean Chey</option>
+              <option value="Battambang">Battambang</option>
+              <option value="Siem Riep">Siem Riep</option>
+              <option value="Kampong Chnang">Kampong Chnang</option>
+              <option value="Kampong Thom">Kampong Thom</option>
+              <option value="Pursat">Pursat</option>
+            </select>
+          </div>
+          <div class="group-box">
+            <input type="radio" name="gender" value="Male">
+            <label for="">Male</label>
+            <input type="radio" name="gender" value="Female">
+            <label for="">Female</label>
+            <input type="radio" name="gender" value="Other">
+            <label for="">Other</label>
+          </div>
+          <div class="group-box">
+            <input type="checkbox" value="IT" class="skill">
+            <label for="">IT</label>
+            <input type="checkbox" value="Finance" class="skill">
+            <label for="">Finance</label>
+            <input type="checkbox" value="Human Resource" class="skill">
+            <label for="">Human Resource</label>
+          </div>
+          <div class="group">
+            <textarea id="comment" placeholder="Comment"></textarea>
+          </div>
+          <div class="group">
+            <button>Add User</button>
+          </div>
+        </form>
+      </div>
+      <div class="right-box">
+        <div class="user-list">
+          <table>
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Province</th>
+                <th>Gender</th>
+                <th>Skill</th>
+                <th>Comment</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

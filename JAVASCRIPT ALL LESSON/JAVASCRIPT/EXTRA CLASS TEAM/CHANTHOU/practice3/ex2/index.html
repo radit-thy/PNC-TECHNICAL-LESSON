@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+    <title>Table</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+
+    <script>
+        let containers = document.querySelector('.container');
+        let create_table = document.createElement('table');
+        let create_thead = document.createElement('thead');
+        let create_tbody = document.createElement('tbody');
+        let create_trth = document.createElement('tr');
+        let create_trtd1 = document.createElement('tr');
+        let create_trtd2 = document.createElement('tr');
+
+        let th_ID = document.createElement('th');
+        th_ID.textContent = 'ID';
+        let th_Firstname = document.createElement('th');
+        th_Firstname.textContent = 'First Name';
+        let th_Lastname = document.createElement('th');
+        th_Lastname.textContent = 'Last Name';
+        let th_Class = document.createElement('th');
+        th_Class.textContent = 'Class';
+
+        
+        let create_td = document.createElement('td');
+        
+// ==================Table 1=====================
+        let td_1 = document.createElement('td')
+        td_1.textContent = '01';
+        let td_2 = document.createElement('td')
+        td_2.textContent = 'Radit';
+        let td_3 = document.createElement
+        td_3.textContent = 'Thy';
+        let td_4 = document.createElement('td')
+        td_4.textContent = 'A';
+        
+// ==================Table 2=====================
+        let td_5 = document.createElement('td')
+        td_5.textContent = '02';
+        let  td_6= document.createElement('td')
+        td_6.textContent = 'Radit';
+        let td_7 = document.createElement('td')
+        td_7.textContent = 'Thy';
+        let td_8 = document.createElement('td')
+        td_8.textContent = 'B';
+
+        containers.appendChild(create_table);
+        create_table.appendChild(create_thead); 
+        create_thead.appendChild(create_trth);
+        create_trth.appendChild(th_ID);
+        create_trth.appendChild(th_Firstname);
+        create_trth.appendChild(th_Lastname);
+        create_trth.appendChild(th_Class);
+
+        create_table.appendChild(create_tbody);
+        create_tbody.appendChild(create_trtd1);
+        create_tbody.appendChild(create_trtd2);
+        create_trtd1.appendChild(td_1)
+        create_trtd1.appendChild(td_2)
+        create_trtd1.appendChild(td_3)
+        create_trtd1.appendChild(td_4)
+        create_trtd2.appendChild(td_5)
+        create_trtd2.appendChild(td_6)
+        create_trtd2.appendChild(td_7)
+        create_trtd2.appendChild(td_8)
+
+        console.log(containers);
+    </script>
+
+</body>
+</html>

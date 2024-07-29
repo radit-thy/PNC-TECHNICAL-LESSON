@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    border:none;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+
+}
+.left-box {
+    flex: 1.5;
+    padding: 10px;
+    border: 2px dotted #ccc;
+}
+.right-box {
+    flex: 4;
+    padding: 10px;
+}
+.group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    align-items: center;
+}
+.left-box [type="text"], .left-box  select, .left-box  textarea {
+    border:1px solid;
+    padding: 10px;
+    width: 100%;
+}
+.left-box  input[type="checkbox"], .left-box  input[type="radio"] {
+  transform: scale(1.5);
+}
+.group-box {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+button {
+    padding: 10px;
+    cursor: pointer;
+    background: #54cddf;
+    border-radius: 40px;
+    width: 100%;
+    font-size: 15px;
+}
+.right-box input {
+    width: 50%;
+    border:1px solid #ccc;
+    padding: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+thead {
+    background: #54cddf;
+}
+tr,td,th {
+    border: 1px solid;
+    padding: 10px;
+}
+tr:nth-child(even) {
+    background: #e7f2f4;
+}

@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-decoration: none;
+  border: 0;
+  box-sizing: border-box;
+  line-height: 1.4;
+  list-style: none;
+}
+body {
+    background: #f0ecec;
+}
+.form-container,
+.result-container {
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.form-group, .thank, .result {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 19px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 7px;
+}
+
+.thank {
+    height: 50vh;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    /* list-style: decimal-leading-zero; */
+    margin: 0;
+}
+ul li {
+    padding: 10px;
+} 
+.group {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+input {
+    transform: scale(1.5);
+    accent-color: red;
+}
+.btn-submit {
+    margin-bottom: 50px;
+}
+button {
+    padding: 10px;
+    cursor: pointer;
+    background: orange;
+    width: 150px;
+    font-size: 16px;
+    color: #fff;
+}
+/* hide and show */
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+#quality, #taste, #chef, #canteen {
+    color: red;
+}

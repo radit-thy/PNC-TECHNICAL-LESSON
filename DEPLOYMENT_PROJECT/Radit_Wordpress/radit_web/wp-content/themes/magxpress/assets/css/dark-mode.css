@@ -1,0 +1,55 @@
+:root {
+    --theme-darkmode-bg-color: #1e1e1e;
+    --theme-darkmode-text-color: #fcfcfc;
+    --theme-darkmode-alt-text-color: #000;
+    --theme-darkmode-link-color: #ffffff;
+    --theme-darkmode-component-color: #fefefe;
+    --theme-darkmode-primary-bg: #b3864b;
+    --theme-darkmode-accent-color: #ED1B2F;
+    --theme-darkmode-accent-hover-color: #fff;
+    --theme-black-color: #000;
+
+    --theme-darkmode-rgb-color: 255, 255, 255;
+    --theme-alt-darkmode-rgb-color: 0, 0, 0;
+}
+
+[data-theme="dark"] {
+    --theme-bg-color: var(--theme-darkmode-bg-color);
+    --theme-text-color: var(--theme-darkmode-text-color);
+    --theme-alt-text-color: var(--theme-darkmode-alt-text-color);
+    --theme-component-color: var(--theme-darkmode-component-color);
+    --theme-panel-bg: var(--theme-darkmode-primary-bg);
+    --theme-link-color: var(--theme-darkmode-link-color);
+    --preloader-throbber-bg: var(--theme-darkmode-text-color);
+    --theme-accent-color: var(--theme-darkmode-accent-color);
+    --swiper-theme-color: var(--theme-darkmode-accent-color);
+    --theme-accent-hover-color: var(--theme-darkmode-accent-hover-color);
+
+    --theme-rgb-color: var(--theme-darkmode-rgb-color);
+    --theme-alt-rgb-color: var(--theme-alt-darkmode-rgb-color);
+}
+
+[data-theme="dark"] .site-header .masthead-main-navigation:not(.sticky-header-active),
+[data-theme="dark"] .site-header .primary-menu > li.current-menu-item > a {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] body.custom-background {
+    background-color: var(--theme-darkmode-bg-color);
+}
+
+/* Dark mode css
+**------------------------------------------------ */
+
+[data-theme="dark"] .sticky-article-link,
+[data-theme="dark"] .site-bg-separator .article-bg-light .entry-details {
+    background-color: #353535;
+}
+
+[data-theme="dark"] .single-author-info-area:before {
+    background-color: #fff;
+}
+
+[data-theme="dark"] .site-section-controls .theme-swiper-button {
+    background-color: var(--theme-darkmode-primary-bg);
+}

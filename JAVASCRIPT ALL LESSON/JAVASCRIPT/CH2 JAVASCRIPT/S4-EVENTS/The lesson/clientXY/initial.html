@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html onmousemove="moveBox(event)">
+
+<head>
+  <title>A Function to Move a Box</title>
+  <style type="text/css">
+    div.box {
+      width: 40px;
+      height: 40px;
+      background: rgb(219, 15, 161);
+      position: absolute;
+      border-radius: 50%;
+      top: -100px;
+      left: -100px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>A Function to Move a Box</h2>
+  <hr />
+  <div class="box" id="box"></div>
+
+  <form action="https://www.w3schools.com/jsref/event_clientx.asp">
+    <input type="password" id="psd">
+    <label for="psd">plese put your password</label>
+    <button type="submit">send</button>
+  </form>
+
+  <script>
+    function moveBox(event) {
+      // TODO 
+      // let body = document.querySelector('body');
+      let circle = document.getElementById('box');
+      circle.style.background = '#'+ event.clientX
+      // let left = event.clientX;
+      // let top = event.clientY;
+      circle.style.left = event.clientX + 'px';
+      circle.style.top = event.clientY + 'px';
+    }
+
+    document.documentElement.addEventListener("mousemove", moveBox);
+  </script>
+</body>
+
+</html>

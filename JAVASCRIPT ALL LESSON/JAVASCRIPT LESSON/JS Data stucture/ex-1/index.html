@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <style>
+        span {
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+            width: 300px;
+            height: 30px;
+            color: white;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .button{
+            background: red;
+            border-radius: 5px;
+            margin-top: 20px;
+            color: white;
+        }
+        select{
+            width: 40%;
+            height: 5vh;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            background: rgb(230, 243, 243);
+            width: 300px;
+            height: 50vh;
+            border-radius: 10px;
+        }
+        p{
+            background: teal;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            height: 4vh;
+            width: 50px;
+        }
+    </style>
+    <div class="container">
+        <form name="My from" id="my form">
+            <h2>Add Tasks</h2>
+            <div class="group">
+                <p>Tasks:</p>
+                <input type="text" class="tasks" id="tasks" placeholder="Tasks">
+            </div>
+            <div class="group">
+                <p>Tag:</p>
+                <select name="My select" id="selection">
+                    <option class="Important" value="1">No Important</option>
+                    <option class="Important" value="0">Important</option>
+                </select>
+            </div>
+            <div class="group">
+                <input type="button" class="button" id="" value="Add Tasks">
+            </div>
+        </form>
+
+    </div>
+    <script>
+
+        let container = document.querySelector('.container');
+        function createSpan(description, priority) {
+            let span = document.createElement('span');
+            span.textContent = description;
+            if (priority === 1) {
+                span.style.backgroundColor = 'red'
+            } else {
+                span.style.backgroundColor = 'teal'
+            }
+            container.appendChild(span)
+
+        }
+        const tasks = [
+            { description: "Tasks 1", priority: 1 },
+            { description: "Tasks 2", priority: 0 },
+            { description: "Tasks 3", priority: 1 },
+            { description: "Tasks 4", priority: 0 },
+            { description: "Tasks 5", priority: 1 }
+        ]
+        for (let i = 0; i < tasks.length; i++) {
+            createSpan(tasks[i]['description'], tasks[i]['priority']);
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #calculator {
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        button {
+            width: 48px;
+            height: 48px;
+            margin: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #equals {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="calculator">
+    <input type="text" id="display" readonly>
+    <br>
+    <button onclick="addValue(1)">1</button>
+    <button onclick="addValue(2)">2</button>
+    <button onclick="addValue(3)">3</button>
+    <button onclick="operator('+')">+</button>
+    <br>
+
+    <button onclick="addValue(4)">4</button>
+    <button onclick="addValue(5)">5</button>
+    <button onclick="addValue(6)">6</button>
+    <button onclick="operator('-')">-</button>
+    <br>
+
+    <button onclick="addValue(7)">7</button>
+    <button onclick="addValue(8)">8</button>
+    <button onclick="addValue(9)">9</button>
+    <button onclick="operator('*')">*</button>
+    <br>
+
+    <button onclick="addValue(0)">0</button>
+    <button onclick="clear(C)">C</button>
+    <button onclick="equal('=')">=</button>
+    <button onclick="operator('/')">/</button>
+</div>
+
+<script src="js/main.js">
+
+</script>
+ 
+</body>
+</html>

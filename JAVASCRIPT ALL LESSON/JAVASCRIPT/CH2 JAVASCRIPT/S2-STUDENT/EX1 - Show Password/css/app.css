@@ -1,0 +1,27 @@
+body {
+    background: #e6e6e6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.container {
+    width: 30%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+.form {
+    padding: 10px;
+}
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+input[type="checkbox"] {
+    transform: scale(2);
+    accent-color: red;
+}
