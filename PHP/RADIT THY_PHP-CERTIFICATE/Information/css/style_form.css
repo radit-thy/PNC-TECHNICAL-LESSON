@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+  }
+  main{
+    background: #d3d1d1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid rgb(145, 141, 141);
+    height: 90vh;
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    height: 8vh;
+    width: 40%;
+    margin-top: 40px;
+    color: #008080;
+
+  }
+  form {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-gap: 16px;
+    max-width: 90%;
+    height: 60vh;
+    margin: 2rem;
+    padding: 1em;
+  }
+  .all-skills{
+    display: flex;
+    gap: 50px;
+  }
+  .skill-1,.skill-2{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  
+  }
+  select{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    border-radius: 2px;
+    background-color: #ddd;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+  
+  }
+  option:hover{
+    color: teal;
+  }
+  option:hover{
+    background: #000;
+    cursor: pointer;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: 1px solid #008080;
+  }
+  
+  button {
+    background: teal;
+    color: white;
+    padding: 0.7em;
+    width: 180%;
+    border: 0;
+    margin-left: 150px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+
+  }
+  button:hover {
+    cursor: pointer;
+    background: #008080;
+  }
+  label{
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  input[type="checkbox"]{
+    outline: 2px solid #008080;
+    font-size: 10px;
+
+  } 
+  input[type="radio"]{
+    outline: none;
+    width: 5%;
+    height: 15px;
+  } 
+  .radio-chiose{
+    display: flex;
+    flex-direction: column;
+
+  }

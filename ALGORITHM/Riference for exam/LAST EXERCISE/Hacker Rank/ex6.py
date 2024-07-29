@@ -1,0 +1,3 @@
+
+def contains(word, char):
+    

@@ -1,0 +1,16 @@
+Ex1 - array = [10, 3, 13, 6, 7, 9]
+- Sum all value in array
+- Find average value in array
+- Find min and max value in array
+- Count odd and event value in array
+- Reverse array from [10, 3, 13, 6, 7, 9] => [9, 7, 6, 13, 3, 10]
+- Replace value less than 10 with 
+- Find number to make it 10 => [0, 7, -3, 4, 3, 1]
+
+Ex2 - fruits = ["banana", "coconut", "mango", "orange"]
+- How many fruits in list
+- How many letter "A" in array => 5
+- How many letter each fruit => [6, 7, 5, 6]
+- How many letter "N" in each fruit => [2, 1, 1, 1]
+- Reverse each each name in array => ["ananab", "tunococ", "ognam", "egnaro"]
+- Remove mango from array

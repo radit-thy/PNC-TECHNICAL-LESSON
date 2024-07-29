@@ -1,0 +1,1 @@
+# How many letter "A" in array => 5

@@ -1,0 +1,12 @@
+Ex1 - numbers = [7, 3, 7, 5, 6, 8, 7]
+- Sum only even number
+- Find index of first 7
+- Remove last 7 value from array
+- Find average of even number
+
+
+Ex2 - fruits  = ["banana", "mango", "coconut", "orange"]
+- How many fruits in the list
+- find position of mango (index)
+- Reverse list
+- How many letter in each fruit : [6, 5, 7, 6]

@@ -1,0 +1,14 @@
+# Kanha record her score in list :
+# score = [
+#   {"subject": "JavaScript", "score": 80, "teacher": "Yon"},
+#   {"subject": "Algorithm", "score": 40, "teacher": "Mengheang"},
+#   {"subject": "Software Deployment", "score": 69, "teacher": "Rady"},
+# ]
+
+#1 - Write program to find the subject that Kanha failed
+#2 - Write program to find average score of Kanha
+#3 - Write program to find teacher name who teach Algorithm
+
+
+
+
